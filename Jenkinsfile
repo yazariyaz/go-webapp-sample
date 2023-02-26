@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'centos-build'
-    }
-
-  }
+  agent any
   stages {
     stage('run app') {
       steps {
